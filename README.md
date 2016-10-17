@@ -11,7 +11,7 @@ var log = console.log;
 
 
 var s = new Set();
-s.add("Godmorgon").add("Godkväll").add("godmorgon");
+s.add("Godmorgon").add("Godkväll").add("Godkväll");
 log(s.size);
 
 
