@@ -33,4 +33,4 @@ var telefoner = [
 
 log(telefoner.map(
 	telefon => telefon.namn +' '+telefon.pris
-)); // [649, 576, 489]
+));
