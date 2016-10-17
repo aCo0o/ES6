@@ -1,15 +1,27 @@
 var log = console.log;
 
 
+
+var s = new Set();
+s.add("Godmorgon").add("Godkväll").add("godmorgon");
+log(s.size);
+
+
+log("vemÄrDu".includes("är"))
+log("aCo0o".repeat(3)) 		
+
+
 // Math
 var multiply = (a, b) => a*b;
-log(multiply(2,5));
+log(multiply(2,5), multiply(25,3));
 
 
 
 // Returnera Array
 var delaMinMeningES6 = mening => mening.split(" "); 
 log(delaMinMeningES6("Jag greppar snart ES6"));
+
+
 
 
 // Returnera DOM Document
@@ -32,5 +44,18 @@ var telefoner = [
 ];
 
 log(telefoner.map(
-	telefon => telefon.namn +' '+telefon.pris
-));
+	telefon => telefon.namn +' Kostar '+telefon.pris +',-'
+)); 
+
+
+
+
+var Fredde = {
+  _namn: "Fredde",
+  _friends: ["Kalle","Sasa","Nina"],
+  printFriends() {
+    this._friends.forEach(f =>
+      log(this._namn + " knows " + f));
+  }
+}
+Fredde.printFriends();
