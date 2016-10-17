@@ -3,6 +3,9 @@ ECMAScript 6 Stuff
 
 
 
+
+```javascript
+
 var log = console.log;
 
 
